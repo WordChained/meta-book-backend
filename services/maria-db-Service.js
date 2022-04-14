@@ -3,7 +3,7 @@ const { dbPassword } = require('../secrets')
 const pool = mariadb.createPool({
     host: 'localhost',
     user: 'root',
-    password: dbPassword,
+    password: process.env.dbPassword,
     connectionLimit: 100,
     database: 'metabook_db',
     multipleStatements: true
