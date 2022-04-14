@@ -13,6 +13,7 @@ const itemRoutes = require('./api/item/item-routes');
 const friendsRoutes = require('./api/friends/friends-routes');
 const cloudinaryRoutes = require('./api/cloudinary/cloudinary-routes');
 const notificationRoutes = require('./api/notification/notification-routes');
+const secretRoutes = require('./api/secret/secret-routes');
 
 const app = express();
 // view engine setup
@@ -40,6 +41,7 @@ app.use('/api/item', itemRoutes);
 app.use('/api/friends', friendsRoutes);
 app.use('/api/cloudinary', cloudinaryRoutes);
 app.use('/api/notification', notificationRoutes);
+app.use('/api/secret', secretRoutes);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
