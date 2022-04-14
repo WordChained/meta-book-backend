@@ -1,5 +1,5 @@
 const mariadb = require('mariadb');
-const { dbPassword } = require('../secrets')
+// const { dbPassword } = require('../secrets')
 const pool = mariadb.createPool({
     host: 'localhost',
     user: 'root',
