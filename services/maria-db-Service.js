@@ -2,7 +2,7 @@ const mariadb = require('mariadb');
 // const { dbPassword } = require('../secrets')
 const pool = mariadb.createPool({
     host: 'metabook.cu3syqqzdyfg.us-east-1.rds.amazonaws.com',
-    user: 'root',
+    user: 'wordchained',
     password: process.env.dbPassword,
     connectionLimit: 100,
     database: 'metabook_db',
