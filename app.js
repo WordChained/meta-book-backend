@@ -1,4 +1,6 @@
 const createError = require('http-errors');
+require('dotenv').config()
+// console.log("process.env:", process.env)
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
