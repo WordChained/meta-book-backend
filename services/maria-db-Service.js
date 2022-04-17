@@ -6,7 +6,7 @@ const pool = mariadb.createPool({
     user: 'wordchained',
     password: process.env.dbPassword,
     connectionLimit: 100,
-    database: 'metabook',
+    database: 'metabook_db',
     multipleStatements: true
 });
 async function getPool() {
