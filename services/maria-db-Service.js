@@ -1,7 +1,6 @@
 const mariadb = require('mariadb');
 // const { dbPassword } = require('../secrets')
 //metabook_db
-console.log("mongopassword:", process.env.mongoPassword);
 const pool = mariadb.createPool({
     host: 'metabook.csx5zg5uetwq.eu-west-1.rds.amazonaws.com',
     user: 'wordchained',
