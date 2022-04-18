@@ -1685,3 +1685,4 @@ sql: UPDATE friends SET status = 'f' WHERE user_id ='61ed7cb47ce07d0c9d482980 OR
 11.4.2022, 17:08:01 - DEBUG - auth-service - login with email: talbd511@gmail.com 
 11.4.2022, 17:08:19 - INFO - (item-controller)adding an item! | {"text":"This is a post by me!","media":[],"publisher":{"id":"624d576aa4e5a5e6beb3b2de"},"feeling":""} 
 11.4.2022, 17:15:26 - ERROR - addFriend error. | Error: retrieve connection from pool timeout after 10001ms 
+18.4.2022, 15:10:13 - ERROR - (item-controller)Failed to get items from type | post | Error: retrieve connection from pool timeout after 10001ms 

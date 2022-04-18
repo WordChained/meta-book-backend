@@ -6,7 +6,7 @@ const pool = mariadb.createPool({
     host: 'metabook.csx5zg5uetwq.eu-west-1.rds.amazonaws.com',
     user: 'wordchained',
     password: process.env.dbPassword,
-    connectionLimit: 10,
+    connectionLimit: 20,
     database: 'metabook_db',
     multipleStatements: true
 });
