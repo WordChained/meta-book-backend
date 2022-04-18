@@ -5,8 +5,8 @@ const pool = mariadb.createPool({
     host: 'metabook.csx5zg5uetwq.eu-west-1.rds.amazonaws.com',
     user: 'wordchained',
     password: process.env.dbPassword,
-    connectionLimit: 100,
-    database: 'metabook',
+    connectionLimit: 1000,
+    database: 'metabook_db',
     multipleStatements: true
 });
 async function getPool() {
