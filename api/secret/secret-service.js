@@ -1,7 +1,6 @@
 module.exports = {
     getSecret,
 }
-console.log(process.env);
 
 async function getSecret() {
     return {
