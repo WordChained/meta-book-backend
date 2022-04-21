@@ -3,6 +3,7 @@ module.exports = {
 }
 
 async function getSecret() {
+    console.log(process.env);
     return {
         cloudinaryAPIKey: process.env.cloudinaryAPIKey,
         cloudinaryAPISecret: process.env.cloudinaryAPISecret,
