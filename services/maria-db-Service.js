@@ -10,12 +10,14 @@ const pool = mariadb.createPool({
     multipleStatements: true
 });
 async function getPool() {
+    let conn;
     try {
-        const conn = await pool.getConnection();
+        conn = await pool.getConnection();
         return conn
     } catch (err) {
         console.log('getPool error:', err);
         // console.log('activeConnections:', pool.activeConnections());
+        if (conn) conn.end()
         throw err;
     }
 }
